@@ -1,0 +1,184 @@
+:root {
+
+  /* ========================================
+     IDENTIDAD DE MARCA
+  ======================================== */
+
+  --color-principal: #D65378;
+
+  --color-principal-hover: #B63D60;
+
+  --color-secundario: #FFF0F2;
+
+  --color-acento: #F2A4B4;
+
+  /* ========================================
+     SUPERFICIES Y FONDOS
+  ======================================== */
+
+  --color-fondo: #FFF5F6;
+
+  --color-surface: #FFFFFF;
+
+  --color-overlay: rgba(0, 0, 0, 0.45);
+
+  /* ========================================
+     TIPOGRAFÍA
+  ======================================== */
+
+  --color-texto: #4A3038;
+
+  --color-texto-soft: #8E6B75;
+
+  --color-texto-invertido: #FFFFFF;
+
+  /* ========================================
+     BORDES
+  ======================================== */
+
+  --color-borde: #F1D9DE;
+
+  --color-borde-hover: #E9BDC8;
+
+  /* ========================================
+     ESTADOS
+  ======================================== */
+
+  --color-stock: #2E7D32;
+
+  --color-sin-stock: #C62828;
+
+  --color-exito: #2E7D32;
+
+  --color-advertencia: #E8C547;
+
+  --color-error: #C62828;
+
+  /* ========================================
+     TIPOGRAFÍA
+  ======================================== */
+
+  --font-principal:
+    "Poppins",
+    sans-serif;
+
+  --text-xs: 12px;
+
+  --text-sm: 14px;
+
+  --text-md: 16px;
+
+  --text-lg: 18px;
+
+  --text-xl: 24px;
+
+  --text-xxl: 32px;
+
+  --line-height: 1.4;
+
+  /* ========================================
+     ESPACIADOS
+  ======================================== */
+
+  --space-1: 4px;
+
+  --space-2: 8px;
+
+  --space-3: 12px;
+
+  --space-4: 16px;
+
+  --space-5: 20px;
+
+  --space-6: 24px;
+
+  --space-7: 32px;
+
+  --space-8: 40px;
+
+  --space-9: 48px;
+
+  /* ========================================
+     BORDES REDONDEADOS
+  ======================================== */
+
+  --radius-sm: 10px;
+
+  --radius-md: 16px;
+
+  --radius-lg: 22px;
+
+  --radius-xl: 28px;
+
+  --radius-full: 999px;
+
+  /* ========================================
+     SOMBRAS
+  ======================================== */
+
+  --shadow-soft:
+    0 4px 12px rgba(
+      214,
+      83,
+      120,
+      0.10
+    );
+
+  --shadow-hover:
+    0 8px 18px rgba(
+      214,
+      83,
+      120,
+      0.16
+    );
+
+  --shadow-floating:
+    0 10px 30px rgba(
+      214,
+      83,
+      120,
+      0.20
+    );
+
+  /* ========================================
+     TRANSICIONES
+  ======================================== */
+
+  --transition-fast:
+    0.15s ease;
+
+  --transition:
+    0.25s ease;
+
+  --transition-slow:
+    0.4s ease;
+
+  /* ========================================
+     LAYOUT
+  ======================================== */
+
+  --container-width: 1200px;
+
+  --navbar-height: 72px;
+
+  --bottom-nav-height: 72px;
+
+  --header-height: auto;
+
+  /* ========================================
+     Z-INDEX
+  ======================================== */
+
+  --z-header: 100;
+
+  --z-overlay: 900;
+
+  --z-menu: 950;
+
+  --z-cart: 960;
+
+  --z-floating: 970;
+
+  --z-modal: 999;
+
+}

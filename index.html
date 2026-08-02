@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- ========================================
+  META
+  ======================================== -->
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+ <meta
+  property="og:title"
+  content="Insumos Grand Bourd"
+>
+
+  <meta
+    name="theme-color"
+  content="#D65378"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta
+  property="og:title"
+  content="Insumos Grand Bourd"
+>
+
+  <meta
+  property="og:description"
+  content="Harinas, chocolates, dulce de leche, decoración y mucho más."
+>
+
+  <meta
+    property="og:image"
+    content="img/banners/banner1.jpg"
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+  <meta
+  property="og:locale"
+  content="es_AR"
+>
+
+<meta
+  property="og:site_name"
+  content="Insumos Grand Bourd"
+>
+
+  <!-- TITLE -->
+
+ <title>
+  Insumos Grand Bourd
+</title>
+
+  <!-- FAVICON -->
+
+  <link
+    rel="icon"
+    href="img/logo/favicon.png"
+  >
+
+  <!-- MANIFEST -->
+
+  <link
+    rel="manifest"
+    href="manifest.json"
+  >
+
+  <!-- PRELOAD -->
+
+  <link
+    rel="preload"
+    as="image"
+    href="img/logo/logo.png"
+  >
+
+  <!-- ========================================
+  CSS
+  ======================================== -->
+
+  <link
+    rel="stylesheet"
+    href="css/variables.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/responsive.css"
+  >
+
+  <!-- ========================================
+  ICONOS
+  ======================================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <!-- ========================================
+  FUENTES
+  ======================================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+</head>
+
+<body>
+
+  <!-- ========================================
+  APP
+  ======================================== -->
+
+  <div id="app">
+
+    <!-- ========================================
+    HEADER
+    ======================================== -->
+
+    <header class="header-premium">
+
+      <!-- TOP -->
+
+      <div class="header-top">
+
+        <!-- LOGO -->
+
+        <div class="header-logo">
+
+          <img
+            src="img/logo/logo.png"
+            alt="Logo del negocio"
+            class="logo"
+            loading="eager"
+          >
+
+          <div class="negocio-info">
+
+            <h1>
+  Insumos Grand Bourd
+</h1>
+
+<p>
+  Todo para repostería y panadería
+</p>
+
+          </div>
+
+        </div>
+
+        <!-- MENÚ -->
+
+        <button
+          id="menu-btn"
+          type="button"
+          class="menu-btn"
+          aria-label="Abrir menú"
+        >
+
+          <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+      </div>
+
+      <!-- BUSCADOR -->
+
+      <div class="header-search-full">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+          type="text"
+          id="buscador"
+          placeholder="Buscar productos..."
+          autocomplete="off"
+          enterkeyhint="search"
+        >
+
+      </div>
+
+    </header>
+
+    <!-- ========================================
+    MENÚ LATERAL
+    ======================================== -->
+
+    <aside
+      id="menu-lateral"
+      class="menu-lateral"
+    >
+
+      <div class="menu-header">
+
+        <h3>
+          Menú
+        </h3>
+
+        <button
+          id="cerrar-menu"
+          class="cerrar-menu"
+          type="button"
+          aria-label="Cerrar menú"
+        >
+
+          <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+      </div>
+
+      <nav class="menu-links">
+
+        <a href="index.html">
+
+          <i class="fa-solid fa-house"></i>
+
+          Inicio
+
+        </a>
+
+        <a href="pages/faq.html">
+
+          <i class="fa-solid fa-circle-question"></i>
+
+          Preguntas frecuentes
+
+        </a>
+
+        <a href="pages/contacto.html">
+
+          <i class="fa-solid fa-envelope"></i>
+
+          Contacto
+
+        </a>
+
+      </nav>
+
+    </aside>
+
+    <!-- OVERLAY MENU -->
+
+    <div
+      id="overlay-menu"
+      class="overlay-menu"
+    >
+    </div>
+
+    <!-- ========================================
+    SLIDER
+    ======================================== -->
+
+    <section class="slider-promos">
+
+      <!-- IZQUIERDA -->
+
+      <button
+        class="slider-arrow prev"
+        type="button"
+        aria-label="Banner anterior"
+      >
+
+        <i class="fa-solid fa-chevron-left"></i>
+
+      </button>
+
+      <!-- CONTENEDOR -->
+
+      <div class="slider-container">
+
+        <div class="slider-track">
+
+          <img
+            src="img/banners/banner1.jpg"
+            alt="Banner promocional 1"
+            width="1200"
+            height="500"
+            loading="lazy"
+          >
+
+          <img
+            src="img/banners/banner2.jpg"
+            alt="Banner promocional 2"
+            width="1200"
+            height="500"
+            loading="lazy"
+          >
+
+          <img
+            src="img/banners/banner3.jpg"
+            alt="Banner promocional 3"
+            width="1200"
+            height="500"
+            loading="lazy"
+          >
+
+        </div>
+
+      </div>
+
+      <!-- DERECHA -->
+
+      <button
+        class="slider-arrow next"
+        type="button"
+        aria-label="Siguiente banner"
+      >
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+      </button>
+
+      <!-- DOTS -->
+
+      <div class="slider-dots">
+
+        <span class="dot active"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+      </div>
+
+    </section>
+
+
+<!-- ========================================
+BENEFICIOS
+======================================== -->
+
+<section class="beneficios">
+
+  <article class="beneficio-card">
+
+    <div class="beneficio-icon">
+
+      <i class="fa-solid fa-boxes-stacked"></i>
+
+    </div>
+
+    <div>
+
+      <h4>
+        Amplio stock
+      </h4>
+
+      <p>
+        Productos disponibles todo el año
+      </p>
+
+    </div>
+
+  </article>
+
+  <article class="beneficio-card">
+
+    <div class="beneficio-icon">
+
+      <i class="fa-solid fa-tags"></i>
+
+    </div>
+
+    <div>
+
+      <h4>
+        Precios mayoristas
+      </h4>
+
+      <p>
+        Ideal para emprendedores
+      </p>
+
+    </div>
+
+  </article>
+
+  <article class="beneficio-card">
+
+    <div class="beneficio-icon">
+
+      <i class="fa-solid fa-truck"></i>
+
+    </div>
+
+    <div>
+
+      <h4>
+        Envíos
+      </h4>
+
+      <p>
+        Según tu zona
+      </p>
+
+    </div>
+
+  </article>
+
+  <article class="beneficio-card">
+
+    <div class="beneficio-icon">
+
+      <i class="fa-brands fa-whatsapp"></i>
+
+    </div>
+
+    <div>
+
+      <h4>
+        Pedidos rápidos
+      </h4>
+
+      <p>
+        Comprá por WhatsApp
+      </p>
+
+    </div>
+
+  </article>
+
+</section>
+
+<!-- ========================================
+CATEGORÍAS
+======================================== -->
+
+<section
+  id="categorias"
+  class="categorias categorias-premium categorias-slider"
+>
+</section>
+
+<!-- ========================================
+TÍTULO PRODUCTOS
+======================================== -->
+
+<section class="titulo-seccion-productos">
+
+      <div class="titulo-linea"></div>
+
+      <div class="titulo-info">
+
+       <h4 id="titulo-categoria">
+  Insumos para repostería y panadería
+</h4>
+      </div>
+
+    </section>
+
+    <!-- ========================================
+    PRODUCTOS
+    ======================================== -->
+
+    <main id="productos">
+    </main>
+
+    <!-- ========================================
+    DATOS CLIENTE
+    ======================================== -->
+
+    <section id="datos-cliente">
+
+      <h2>
+        Datos del pedido
+      </h2>
+
+      <!-- NOMBRE -->
+
+      <input
+        type="text"
+        id="nombre-cliente"
+        placeholder="Tu nombre"
+        autocomplete="name"
+      >
+
+      <!-- ENTREGA -->
+
+      <div class="opciones-entrega">
+
+        <label>
+
+          <input
+            type="radio"
+            name="tipo-entrega"
+            value="retiro"
+            checked
+          >
+
+          Retiro
+
+        </label>
+
+        <label>
+
+          <input
+            type="radio"
+            name="tipo-entrega"
+            value="delivery"
+          >
+
+          Delivery
+
+        </label>
+
+      </div>
+
+      <!-- DIRECCIÓN -->
+
+      <div
+  id="contenedor-direccion"
+  class="direccion-oculta"
+>
+
+  <select
+    id="localidad-cliente"
+  >
+
+    <option value="">
+      Seleccionar localidad
+    </option>
+
+  </select>
+
+  <input
+    type="text"
+    id="direccion-cliente"
+    placeholder="Dirección de entrega"
+    autocomplete="street-address"
+  >
+
+  <div id="info-envio">
+
+    <strong>
+
+      Envío:
+      <span id="costo-envio">
+        $0
+      </span>
+
+    </strong>
+
+  </div>
+
+</div>
+
+  <!-- ========================================
+  OVERLAY CARRITO
+  ======================================== -->
+
+  <div
+    id="overlay-carrito"
+    class="overlay-carrito"
+  >
+  </div>
+
+  <!-- ========================================
+  CARRITO
+  ======================================== -->
+
+  <section
+    id="seccion-carrito"
+    class="carrito-panel"
+  >
+
+    <!-- HEADER -->
+
+    <div class="carrito-header">
+
+      <h2>
+        🛒 Pedido
+      </h2>
+
+      <div class="carrito-header-actions">
+
+        <button
+          id="btn-vaciar"
+          type="button"
+        >
+
+          Vaciar
+
+        </button>
+
+        <button
+          id="cerrar-carrito"
+          type="button"
+          class="cerrar-carrito"
+          aria-label="Cerrar carrito"
+        >
+
+          <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- LISTA -->
+
+    <ul id="lista-carrito">
+    </ul>
+
+    <!-- VACÍO -->
+
+    <p id="carrito-vacio">
+
+      Tu carrito está vacío
+
+    </p>
+
+    <!-- FOOTER -->
+
+    <div class="carrito-footer">
+
+      <h3 id="total-carrito">
+
+        Total: $0
+
+      </h3>
+
+      <button
+        id="btn-finalizar"
+        type="button"
+      >
+
+        Finalizar pedido
+
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================
+  FOOTER
+  ======================================== -->
+
+  <footer class="footer">
+
+    <div class="footer-links">
+
+      <a href="index.html">
+        Inicio
+      </a>
+
+      <a href="pages/faq.html">
+        FAQ
+      </a>
+
+      <a href="pages/contacto.html">
+        Contacto
+      </a>
+
+    </div>
+
+    <p id="footer-copyright">
+  © 2026
+</p>
+
+  </footer>
+
+  <!-- ========================================
+  BARRA FLOTANTE
+  ======================================== -->
+
+  <div
+    id="barra-flotante"
+    class="barra-flotante"
+  >
+
+    <div class="barra-info">
+
+      <span id="barra-cantidad">
+
+        0 productos
+
+      </span>
+
+      <strong id="barra-total">
+
+        Total: $0
+
+      </strong>
+
+    </div>
+
+    <button
+      id="barra-ver-carrito"
+      type="button"
+    >
+
+      Ver carrito
+
+    </button>
+
+  </div>
+
+  <!-- ========================================
+  NAVBAR
+  ======================================== -->
+
+  <nav class="bottom-nav">
+
+    <!-- INICIO -->
+
+    <button
+      class="bottom-btn activo"
+      type="button"
+    >
+
+      <i class="fa-solid fa-house"></i>
+
+      <span>
+        Inicio
+      </span>
+
+    </button>
+
+    <!-- CATEGORÍAS -->
+
+    <button
+      class="bottom-btn"
+      id="btn-categorias-nav"
+      type="button"
+    >
+
+      <i class="fa-solid fa-layer-group"></i>
+
+      <span>
+        Categorías
+      </span>
+
+    </button>
+
+    <!-- BUSCAR -->
+
+    <button
+      class="bottom-btn"
+      id="btn-buscar-nav"
+      type="button"
+    >
+
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+      <span>
+        Buscar
+      </span>
+
+    </button>
+
+    <!-- CARRITO -->
+
+    <button
+      class="bottom-btn bottom-cart"
+      id="bottom-cart-btn"
+      type="button"
+    >
+
+      <div class="bottom-cart-icon">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span
+          id="contador-bottom"
+          class="contador-bottom"
+        >
+          0
+        </span>
+
+      </div>
+
+      <span>
+        Carrito
+      </span>
+
+    </button>
+
+  </nav>
+
+  <!-- ========================================
+  SCRIPTS
+  ======================================== -->
+
+  <script
+    src="config/config.js"
+    defer
+  ></script>
+
+  <script
+    src="js/productos.js"
+    defer
+  ></script>
+
+  <script
+    src="js/categorias.js"
+    defer
+  ></script>
+
+  <script
+   src="js/envios.js" 
+   defer
+   ></script>
+
+  <script
+    src="js/carrito.js"
+    defer
+  ></script>
+
+  <script
+    src="js/whatsapp.js"
+    defer
+  ></script>
+
+  <script
+    src="js/app.js"
+    defer
+  ></script>
+
+</body>
+
+</html>
