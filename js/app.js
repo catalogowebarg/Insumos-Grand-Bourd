@@ -16,6 +16,10 @@ document.addEventListener(
 
 aplicarTema();
 
+    // El stock remoto se carga antes del primer render para que cada variante
+    // muestre siempre el valor que figura en Google Sheets.
+    await cargarDatosSheets();
+
     // RENDER
 
     renderizarCategorias();
@@ -284,8 +288,8 @@ function renderizarProductos() {
           ${producto.nombre}
         </h3>
 
-        <p class="descripcion">
-          ${producto.descripcion}
+        <p class="descripcion" id="descripcion-${producto.id}">
+          ${producto.variantes?.[0]?.descripcion ?? producto.descripcion}
         </p>
 
       </div>
@@ -1398,6 +1402,11 @@ function seleccionarVariante(
     botonAgregar.textContent = stock <= 0 ? "Sin stock" : "🛒 Agregar al pedido";
   }
 
+  const descripcionElemento = document.getElementById(`descripcion-${productoId}`);
+  if (descripcionElemento) {
+    descripcionElemento.textContent = varianteSeleccionada?.descripcion ?? productoSeleccionado?.descripcion ?? "";
+  }
+
   const contenedor =
   elemento.parentElement;
 
@@ -1778,6 +1787,29 @@ function aplicarVariante(
     sabor.textContent =
       variante.nombre;
 
+  }
+
+  // El carrusel tambiÃ©n debe refrescar el stock de la variante mostrada.
+  // Antes quedaba visible el stock de la primera variante del producto.
+  const stockElemento = document.getElementById(`stock-${producto.id}`);
+  const botonAgregar = document.getElementById(`agregar-${producto.id}`);
+  const stock = variante.stock ?? producto.stock ?? 0;
+
+  if (stockElemento) {
+    stockElemento.textContent = stock <= 0 ? "Sin stock" : `Stock ${stock}`;
+    stockElemento.className = `stock ${
+      stock <= 0 ? "stock-vacio" : stock <= 5 ? "stock-bajo" : "stock-ok"
+    }`;
+  }
+
+  if (botonAgregar) {
+    botonAgregar.disabled = stock <= 0;
+    botonAgregar.textContent = stock <= 0 ? "Sin stock" : "🛒 Agregar al pedido";
+  }
+
+  const descripcionElemento = document.getElementById(`descripcion-${producto.id}`);
+  if (descripcionElemento) {
+    descripcionElemento.textContent = variante.descripcion ?? producto.descripcion ?? "";
   }
 
   document
