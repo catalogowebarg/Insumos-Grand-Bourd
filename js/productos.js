@@ -113,7 +113,7 @@ const PRODUCTOS = [
     tipoVariante: "selector",
     nombre: "El serranito repostero",
     categoria: "Dulce de Leche",
-    imagen: "img/productos/el-serranito.jpg",
+    imagen: "img/productos/el-serranito-1kg.jpg",
     descripcion: "Dulce de leche repostero El serranito",
     precio: 4800,
     stock: 10,
