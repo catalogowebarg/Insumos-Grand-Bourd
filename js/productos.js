@@ -242,7 +242,7 @@ const PRODUCTOS = [
         nombre: "Celestes",
         precio: 1000,
         stock: 5,
-        imagen: "img/productos/Pirotines-celestes.jpg"
+        imagen: "img/productos/pirotines-celestes.jpg"
       },
 {
         nombre: "Rosas",
