@@ -15,7 +15,7 @@
 
 const PRODUCTOS = [
 
-   {
+  {
     id: "richs-bettercreme-chantilly",
     tipoVariante: "selector",
     nombre: "Rich's Bettercreme",
@@ -108,6 +108,33 @@ const PRODUCTOS = [
     ]
   },
 
+  {
+    id: "el-serranito-1-kg",
+    tipoVariante: "selector",
+    nombre: "El serranito repostero",
+    categoria: "Dulce de Leche",
+    imagen: "img/productos/el-serranito.jpg",
+    descripcion: "Dulce de leche repostero El serranito",
+    precio: 4800,
+    stock: 10,
+    visible: true,
+    destacado: false,
+    variantes: [
+      {
+        nombre: "1kg",
+        precio: 4800,
+        stock: 10,
+        imagen: "img/productos/el-serranito-1kg.jpg"
+      },
+      {
+        nombre: "10kg",
+        precio: 0,
+        stock: 10,
+        imagen: "img/productos/el serranito-10kg.jpg"
+      }
+    ]
+  },
+
 
   {
     id: "pasta-frutilla",
@@ -189,33 +216,44 @@ const PRODUCTOS = [
     destacado: false,
     variantes: [
       {
-        nombre: "Verde",
+        nombre: "Verdes",
         precio: 1000,
-        stock: 20,
+        stock:2,
         imagen: "img/productos/pirotines-verde.jpg"
       },
       {
-        nombre: "Rojo",
+        nombre: "Rojos",
         precio: 1000,
-        stock: 20,
+        stock: 2,
         imagen: "img/productos/pirotines-rojo.jpg"
       },
       {
-        nombre: "Lila",
+        nombre: "Lilas",
         precio: 1000,
-        stock: 20,
+        stock: 3,
         imagen: "img/productos/pirotines-lilas.jpg"
       },
-{
-        nombre: "Rosa",
+      {
+        nombre: "Amarillos",
         precio: 1000,
-        stock: 20,
+        stock: 4,
+        imagen: "img/productos/pirotines-amarillos.jpg"
+      },{
+        nombre: "Celestes",
+        precio: 1000,
+        stock: 5,
+        imagen: "img/productos/Pirotines-celestes.jpg"
+      },
+{
+        nombre: "Rosas",
+        precio: 1000,
+        stock: 6,
         imagen: "img/productos/pirotines-rosa.jpg"
       },
       {
-        nombre: "Violeta",
+        nombre: "Violetas",
         precio: 1000,
-        stock: 20,
+        stock: 7,
         imagen: "img/productos/pirotines-violeta.jpg"
       }
     ]
