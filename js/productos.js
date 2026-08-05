@@ -15,7 +15,7 @@
 
 const PRODUCTOS = [
 
-  {
+   {
     id: "richs-bettercreme-chantilly",
     tipoVariante: "selector",
     nombre: "Rich's Bettercreme",
@@ -28,16 +28,16 @@ const PRODUCTOS = [
     destacado: false,
     variantes: [
       {
-        nombre: "907g",
-        precio: 9600,
-        stock: 10,
-        imagen: "img/productos/richs-bettercreme-907.jpg"
-      },
-      {
         nombre: "453g",
         precio: 8000,
         stock: 10,
         imagen: "img/productos/richs-bettercreme-453.jpg"
+      },
+      {
+        nombre: "907g",
+        precio: 9600,
+        stock: 10,
+        imagen: "img/productos/richs-bettercreme-907.jpg"
       }
     ]
   },
