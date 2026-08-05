@@ -28,16 +28,16 @@ const PRODUCTOS = [
     destacado: false,
     variantes: [
       {
-        nombre: "907g",
+        nombre: "453",
         precio: 9600,
         stock: 10,
-        imagen: "img/productos/richs-bettercreme-907.jpg"
+        imagen: "img/productos/richs-bettercreme-453.jpg"
       },
       {
-        nombre: "453g",
+        nombre: "907g",
         precio: 8000,
         stock: 10,
-        imagen: "img/productos/richs-bettercreme-453.jpg"
+        imagen: "img/productos/richs-bettercreme-907.jpg"
       }
     ]
   },
