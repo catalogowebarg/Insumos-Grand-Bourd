@@ -130,7 +130,7 @@ const PRODUCTOS = [
         nombre: "10kg",
         precio: 0,
         stock: 10,
-        imagen: "img/productos/el serranito-10kg.jpg"
+        imagen: "img/productos/el-serranito-10kg.jpg"
       }
     ]
   },
