@@ -114,17 +114,18 @@ colores: {
     moneda:
       "$",
 
+    // SheetDB es la fuente de stock publicada para el catálogo.
     usarGoogleSheets:
-      false,
+      true,
 
     usarSheetDB:
-      false,
+      true,
 
     sheetDB:
-      "",
+      "https://sheetdb.io/api/v1/g0vcwtnlpb10z",
 
     sheetDBUrl:
-      ""
+      "https://sheetdb.io/api/v1/g0vcwtnlpb10z"
 
   },
 
